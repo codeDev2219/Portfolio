@@ -70,7 +70,7 @@ b {
 .navItems li:hover a,
 .links a:hover {
     color: rgb(226, 144, 43);
-    text-decoration: solid;
+    text-decoration: underline;
 }
 
 .links a {
@@ -262,4 +262,27 @@ button:hover {
 
 footer {
     background-color: #1a1a1a;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.info>h2 {
+    color: #61879c;
+    margin-top: 4em;
+    width: 35vmax;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.info>p {
+
+    color: #3d535f;
+    height: 15vmax;
+    width: 45vmax;
+    padding: 2vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
