@@ -1,0 +1,105 @@
+
+@media only screen and (max-width: 770px) {
+  
+  .links {
+    gap: 5px ;
+  }
+  
+  .imagebox>#profile {
+    position: relative;
+    width: 100%;
+    height: 100% ;
+  }
+
+  .navItems li a {
+      letter-spacing: 1px;
+  }
+  .navItems {
+    gap: 5px ;
+  }
+  :root {
+    --font-color-1: white ;
+    --wrapper-width: 85vw ;
+
+    --font-2xl : 30px ;
+    --font-1xl : 20px ;
+    --font-1xs : 12.5px ;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .left-section {
+    width: 100% ;
+  }
+
+  .wrapper {
+    overflow-y: scroll  ;
+    overflow-x: hidden ;
+    flex-direction: column-reverse  ;
+  }
+  .right-section {
+    width: 100%;
+    height: 100vh;
+  }
+  :root {
+    
+    --font-color-1: white ;
+    --wrapper-width: 85vw ;
+
+    --font-2xl : 22.5px ;
+    --font-3xl : 30px ;
+    --font-1xl : 15px ;
+    --font-1xs : 10px ;
+  }
+  
+  .links {
+    gap: 5px ;
+  }
+  .imagebox>#profile {
+    position: relative;
+    width: 175%;
+    height: 280% ;
+    left: 7.5%;
+  }
+
+  .navItems li a {
+      letter-spacing: 1px;
+  }
+
+  .navItems {
+    gap: 5px ;
+  }
+  h1 {
+    height: 25% ;
+  }
+  p {
+    height: auto ;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .left-section {
+    width: 100% ;
+  }
+  
+  .wrapper {
+    overflow-y: scroll  ;
+    overflow-x: hidden ;
+    flex-direction: column-reverse  ;
+  }
+  .right-section {
+    width: 100%;
+    height: 100vh;
+  }
+  :root {
+    
+    --font-color-1: white ;
+    --wrapper-width: 85vw ;
+
+    --font-2xl : 22.5px ;
+    --font-3xl : 30px ;
+    --font-1xl : 15px ;
+    --font-1xs : 10px ;
+  }
+  
+}
