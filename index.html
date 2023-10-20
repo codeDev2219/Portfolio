@@ -8,7 +8,10 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
     />
-    <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet" href="public/style/first_page.css" />
+    <link rel="stylesheet" href="public/style/navbar.css" />
+    <link rel="stylesheet" href="public/style/responsive_style.css" />
     <link
       rel="shortcut icon"
       href="image/android-chrome-512x512.png"
@@ -18,28 +21,46 @@
   </head>
   <body>
     <div class="container">
-      <nav>
+      <div id="animation-ball">
+
+      </div>
+      <div class=" width-container">
+
+      <nav class="nav">
+        
         <div class="logo">folio<b>.</b></div>
+
         <ul class="navItems">
           <li><a href="index.html">Home</a></li>
           <li><a href="index1.html">About</a></li>
           <li><a href="Skills.html">Skills</a></li>
-          <li><a href="#">Blog</a></li>
+          <li><a href="Contact.html">Project </a></li>
+
         </ul>
+
         <div class="links">
-          <a
-            href="https://www.linkedin.com/in/vikas-sharma-4019071b6/"
+          <a href="https://www.linkedin.com/in/vikas-sharma-4019071b6/"
             target="_blank"
-            ><i class="social"><img src="image/linkedin.png" alt="linkedin"></i></a
-          >
-          <a href="https://github.com/codeDev2219" target="_blank" class="social"><img src="image/github.png" alt="github"></a>
-          <a href="https://twitter.com/VikasSh28956251" target="_blank"><i class="social"><img src="image/twitter.png" alt="twitter"></i></a>
-          <a href="mailto: vikassharma8822@gmail.com" target="_blank"><i class="social"><img src="image/email.png" alt="email"></i></a>
+            >
+              <i class="social"> <img src=" image/links/linkedin.png" alt="linkedin-profile-link"> </i>
+          </a>
+          <a href="https://github.com/codeDev2219" target="_blank" class="social">
+            <img src="image/links/github.png" alt="github-profile-link">
+          </a>
+
+          <a href="https://twitter.com/VikasSh28956251" target="_blank">
+            <i class="social"> <img src="image/links/twitter.png" alt="twitter-profile-link"> </i>
+          </a>
+
+          <a href="mailto: vikassharma8822@gmail.com" target="_blank">
+            <i class="social"><img src="image/links/email.png" alt="email-profile-link"></i>
+          </a>
         </div>
+
       </nav>
-      <section id="section">
+      
       <div class="wrapper">
-        <div class="cols col0">
+        <div class="left-section">
           <span class="topline">Hello</span>
           <h1>I'm <span class="multiText"></span></h1>
           <p>
@@ -52,38 +73,29 @@
             innovative solutions and make a positive impact in the field of
             technology.
           </p>
-          <div class="btns">
+          <div class="main-btns ">
             <a
               href="https://drive.google.com/file/d/1xI-Pmgq65Pl3UE36Jt6aiLDUU4AcL5Zo/view?usp=sharing"
               target="_blank"
-              ><button>Download CV</button></a
+              ><button>View CV</button></a
             >
-            <button>Hire me</button>
+            <a
+              href="https://drive.google.com/file/d/1xI-Pmgq65Pl3UE36Jt6aiLDUU4AcL5Zo/view?usp=sharing"
+              target="_blank"
+              ><button>Contacts</button></a
+            >
           </div>
         </div>
-        <div class="cols col1">
+        <div class="right-section-pic">
           <div class="imagebox">
-<!--             <img
-              src="image/istockphoto-1090771750-612x612-removebg-preview.png"
-              alt=""
-              id="splash"
-            /> -->
-            <img
-              src="image/newsmarty (1).png"
+            <img src="image/user_pic.png"
               alt=""
               id="profile"
             />
-          </div></section>
-        </div>
-      </div>
-    </div>
-    
-    <footer>
-      <div class="foot">
-        <p>Developed by &copy; Vikas Sharma.</p>
+          </div>
       </div>
       
-    </footer>
+    </div>
   </body>
   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>

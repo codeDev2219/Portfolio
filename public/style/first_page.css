@@ -1,0 +1,142 @@
+
+#animation-ball ,
+.container::after {
+    position: absolute;
+    content: '';
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    left: 50%;
+    top: 25%;
+    background: linear-gradient(-45deg, var(--logo-colors), var(--theme-1));
+
+    animation: spin-360 20s ease-in-out 0s infinite alternate  ;
+    z-index: -1 ;
+
+    --move-to-y: 400px;
+    --move-to-x: 250px;
+}
+
+@keyframes spin-360 {
+    100% {
+        transform: translate(var(--move-to-x),var(--move-to-y)) rotate(45deg);
+
+    }
+}
+#animation-ball {
+    
+    --move-to-y: -400px;
+    --move-to-x: -250px;
+    left: -5%;
+    top: 50%;
+    height: 400px;
+    width: 400px;
+    background: linear-gradient(-45deg, var(--logo-colors), var(--theme-1));
+}
+
+.container {
+    position: relative;
+    z-index: 2 ;
+}
+.wrapper {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 80px);
+    align-items: center;
+    overflow: hidden;
+    z-index: 5 ;
+}
+.left-section {
+    height: 100% ;
+    min-width: 60% ;
+    display: flex ;
+    flex-direction: column  ;
+}
+
+.topline {
+    position: relative;
+    font-size: var( --font-2xl);
+    width: 100% ;
+    letter-spacing: 5px;
+    color: var(--logo-colors );
+}
+
+h1 {
+    font-size: var(--font-3xl);
+    font-weight: 900;
+    color: var(--logo-colors );
+    height: 25%;
+    overflow: hidden ;
+}
+
+.multiText {
+    color: var(--theme-1 );
+    text-transform: capitalize;
+}
+
+p {
+    display: block;
+    font-size: var(--font-1xs) ;
+    color: var(--logo-colors );
+    height: 50%;
+    overflow: hidden;
+}
+.right-section-pic {
+    height: 100% ;
+    min-width: 40% ;
+    display: flex ;
+    flex-direction: column  ;
+    position: relative;
+}
+.imagebox {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center ;
+    overflow: hidden ;
+}
+
+
+.imagebox>#profile {
+    position: relative;
+    width: 100%;
+    height: 175% ;
+
+    filter: drop-shadow(0 0 15px black);
+
+    animation: animateUser 4s linear infinite;
+}
+
+
+.main-btns {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+button {
+    outline: none;
+    border: none;
+
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: var(--font-1xl);
+    font-weight: 400;
+    color: var(--font-color-1) ;
+    background-color: var(--logo-colors );
+    
+    letter-spacing: 2.5px ;
+    padding: 10px 15px ;
+    margin: 20px 0px ;
+    text-transform: capitalize;
+    box-shadow: 0 15px 10px rgba(0, 0, 0, 0.4);
+}
+
+button:hover {
+    background-color: var(--theme-1) ;
+}
+
